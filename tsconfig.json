@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,7 +13,58 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@model/*": [
+        "src/model/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@functions/*": [
+        "src/functions/*"
+      ],
+      "@templates/*": [
+        "src/components/template/*"
+      ],
+      "@icons/*": [
+        "src/components/icons/*"
+      ],
+      "@sliderAnimation/*": [
+        "src/components/template/sliderAnimation/*"
+      ],
+      "@sections/*": [
+        "src/components/template/sections/*"
+      ],
+      "@layout/*": [
+        "src/components/template/layout/*"
+      ],
+      "@Menu/*": [
+        "src/components/template/Menu/*"
+      ],
+      "@utils/*": [
+        "src/components/template/utils/*"
+      ],
+      "@auth/*": [
+        "src/components/auth/*"
+      ],
+      "@animations/*": [
+        "src/components/animations/*"
+      ],
+      "@context/*": [
+        "src/data/contexts/*"
+      ],
+      "@hook/*": [
+        "src/data/hook/*"
+      ],
+      "@api/*": [
+        "src/data/services/*"
+      ]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
